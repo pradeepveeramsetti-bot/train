@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Reservation Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('train img.jpg'); /* 🚆 Your uploaded train image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 1000;
+    padding: 2000;
+  }
+
+  .container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #005fa3;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Train Reservation Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="train">Train Name:</label>
+      <input type="text" id="train" name="train" placeholder="Enter train name" required>
+
+      <label for="trainno">Train Number:</label>
+      <input type="text" id="trainno" name="trainno" placeholder="Enter train number" required>
+
+      <label for="from">From Station:</label>
+      <input type="text" id="from" name="from" placeholder="Enter source station" required>
+
+      <label for="to">To Station:</label>
+      <input type="text" id="to" name="to" placeholder="Enter destination station" required>
+
+      <label for="date">Date of Journey:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="class">Class:</label>
+      <select id="class" name="class" required>
+        <option value="">--Select Class--</option>
+        <option>Sleeper (SL)</option>
+        <option>Third AC (3A)</option>
+        <option>Second AC (2A)</option>
+        <option>First AC (1A)</option>
+      </select>
+
+      <button type="submit" class="btn">Book Ticket</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
